@@ -9,9 +9,6 @@ class Prueba_With():
         print("                                               ")
         print(" *=> AHORA estoy en:  __exit__")
 
-    #def imprimir(self):
-    #    print(f'El valor introducido es: {self.numero}')
-
     def __repr__(self):
         return f'      -> El valor introducido es: {self.numero}'
 
