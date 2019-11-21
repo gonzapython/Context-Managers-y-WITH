@@ -115,3 +115,11 @@ Aplicando todo esto, podemos hacer nuestras propias clases utilizando los contex
     * El método __exit__ se encarga de cerrar la conexión al salir del bloque with.
   
   ==> NOTA: esto es muy usado en Big Data (sábados por la mañana...con sueño)
+  
+  -- Fuentes consultadas (he copiado información):
+  
+    * https://github.com/yasoob/intermediatePython/blob/master/context_managers.rst
+      (Merece la pena mirar los repositorios de M.Yasoob Ullah Khalid)
+    * https://www.geeksforgeeks.org/context-manager-in-python/
+    
+    
