@@ -1,10 +1,10 @@
-# Context-Managers-y-WITH
+# Context Managers y WITH
 Explicación teórica y programas ejemplo de cómo funcionan los "Context Managers" de WITH
 
 
 Los "Gestores de Contexto" se encargan de:
- * asignar recursos: método  __enter__
- * liberar esos recursos: método  __exit__
+ * asignar recursos: método  "__enter__"
+ * liberar esos recursos: método  "__exit__"
 cuando es necesario.
 
 El ejemplo típico es el de WITH, que permite ejecutar dos operaciones relacionadas.
@@ -35,9 +35,9 @@ Sería equivalente a:
 
         file.close()
 
-Aplicando todo esto, podemos hacer nuestras propias clases:
+Aplicando todo esto, podemos hacer nuestras propias clases utilizando los context manager "__enter__" y "__exit__":
 
- 1.)- Una clase para la gestión de ficheros, con los context manager  __enter__ y __exit__:
+ 1.)- Una clase para la GESTION de FICHEROS, 
 
     class FileManager(): 
 
@@ -67,7 +67,7 @@ Aplicando todo esto, podemos hacer nuestras propias clases:
         f.write('Esto es un Test.....') 
 
 
- 2.)- Una clase para la gestión de la conexión a MongoDB, con los context manager __enter__ y __exit__:
+ 2.)- Una clase para la GESTION de la CONEXION a MongoDB, con los context manager __enter__ y __exit__:
  
     from pymongo import MongoClient 
 
@@ -89,7 +89,7 @@ Aplicando todo esto, podemos hacer nuestras propias clases:
 
         def __exit__(self, exc_type, exc_value, exc_traceback): 
 
-          self.connection.close() 
+            self.connection.close() 
 
   #Conexión al localhost 
   
