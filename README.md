@@ -37,7 +37,7 @@ Sería equivalente a:
 
 Aplicando todo esto, podemos hacer nuestras propias clases utilizando los context manager "__enter__" y "__exit__":
 
- 1.)- Una clase para la GESTION de FICHEROS, 
+Una clase para la GESTION de FICHEROS, 
 
     class FileManager(): 
 
@@ -66,55 +66,6 @@ Aplicando todo esto, podemos hacer nuestras propias clases utilizando los contex
 
         f.write('Esto es un Test.....') 
 
-
- 2.)- Una clase para la GESTION de la CONEXION a MongoDB, con los context manager __enter__ y __exit__:
- 
-    from pymongo import MongoClient 
-
-    class MongoDBConnectionManager(): 
-
-        def __init__(self, hostname, port): 
-
-            self.hostname = hostname 
-
-            self.port = port 
-
-            self.connection = None
-
-        def __enter__(self): 
-
-            self.connection = MongoClient(self.hostname, self.port) 
-
-            return self
-
-        def __exit__(self, exc_type, exc_value, exc_traceback): 
-
-            self.connection.close() 
-
-  #Conexión al localhost 
-  
-    with MongoDBConnectionManager('localhost', '27017') as mongo: 
-
-        collection = mongo.connection.SampleDb.test 
-
-        data = collection.find({'_id': 1}) 
-
-        print(data.get('name')) 
-    
-  
-  Al ejecutar el bloque with, se ejecutan las siguientes operaciones:
-  
-    * Se crea un objeto MongoDBConnectionManager con localhost como nombre de hostname y 27017 como puerto, cuando se ejecuta el método
-      __init__.
-      
-    * El método __enter__ abre la conexión mongodb y devuelve el objeto MongoDBConnectionManager a la variable mongo.
-    
-    * Se accede a la colección de prueba en la base de datos SampleDb y se recupera el documento con _id = 1. Se imprime el campo de
-      nombre del documento.
-      
-    * El método __exit__ se encarga de cerrar la conexión al salir del bloque with.
-  
-  ==> NOTA: esto es muy usado en Big Data (sábados por la mañana...con sueño)
   
   -- Fuentes consultadas (he copiado información):
   
