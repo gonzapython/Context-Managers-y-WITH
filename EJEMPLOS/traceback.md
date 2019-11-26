@@ -1,3 +1,9 @@
+
+INTENTO de EXPLICACIÓN
+----------------------
+de los tres parámetros: exception_tye, exception_value, exception_traceback del método `__exit__`
+__exit__(self, exc_type, exc_value, exc_traceback): 
+
 PRIMERO
 --------
 Existe un módulo llamado sys
@@ -25,3 +31,7 @@ Su significado es:
 
 
 ** Objetos Traceback (rastreo): Los objetos Traceback(de rastreo) representan un rastreo de pila de una excepción. Un objeto de rastreo se crea implícitamente cuando ocurre una excepción. 
+
+Referencias:
+https://docs.python.org/3/library/sys.html#module-sys
+https://docs.python.org/3/reference/datamodel.html#traceback-objects
