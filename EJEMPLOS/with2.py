@@ -4,6 +4,8 @@ class Prueba_With():
 
     def __enter__(self):
         print(" *=> AHORA estoy en:  __enter__")
+        self.numero = self.numero + 1
+        return
 
     def __exit__(self, exc_type, exec_value, traceback):
         print("                                               ")
