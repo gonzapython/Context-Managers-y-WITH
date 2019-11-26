@@ -1,7 +1,13 @@
 
 INTENTO de EXPLICACIÓN
 ----------------------
-de los tres parámetros: exception_tye, exception_value, exception_traceback del método `__exit__`
+de los tres parámetros: 
+ * exception_tye
+ * exception_value
+ * exception_traceback
+
+del método `__exit__`
+
 __exit__(self, exc_type, exc_value, exc_traceback): 
 
 PRIMERO
