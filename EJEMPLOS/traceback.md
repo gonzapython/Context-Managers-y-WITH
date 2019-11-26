@@ -34,7 +34,9 @@ Su significado es:
 
 ** Objetos Traceback (rastreo): Los objetos Traceback(de rastreo) representan un rastreo de una excepción. Un objeto de rastreo se crea implícitamente cuando ocurre una excepción. 
 
-Referencias:
+
+--Referencias:
 
 https://docs.python.org/3/library/sys.html#module-sys
+
 https://docs.python.org/3/reference/datamodel.html#traceback-objects
