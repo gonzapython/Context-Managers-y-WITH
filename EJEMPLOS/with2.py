@@ -24,7 +24,7 @@ print("                                               ")
 
 miwith = Prueba_With(77)
 
-with miwith as wt:
+with miwith:
     miwith.imprimir()
 
 
