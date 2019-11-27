@@ -13,9 +13,9 @@ El módulo define las siguientes funciones:
 
     traceback.print_exception(etype, value, tb, limit=None, file=None, chain=True)
 
-    traceback.print_exc(limit=None, file=None, chain=True)¶
+    traceback.print_exc(limit=None, file=None, chain=True)
 
-    traceback.extract_tb(tb, limit=None)¶
+    traceback.extract_tb(tb, limit=None)
 
     traceback.format_exception(etype, value, tb, limit=None, chain=True)
 
