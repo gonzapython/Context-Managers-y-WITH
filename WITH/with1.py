@@ -12,7 +12,7 @@ class Prueba_With():
         print(" *=> AHORA estoy en:  __exit__")
 
     def __repr__(self):
-        return f'      -> El valor introducido es: {self.numero}'
+        return f'      -> El valor introducido es: {self.numero} '
 
 
 # --------
